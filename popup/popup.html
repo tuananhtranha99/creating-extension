@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Entry Drop</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+</head>
+<body>
+    <div class="container m-3">
+        <h1 class="title">Global Entry Drop</h1>
+
+        <div class="field">
+            <label for="" class="label">Status</label>
+            <span id="runningSpan" class="tag is-success">Running</span>
+            <span id="stoppedSpan" class="tag is-danger">Stopped</span>
+        </div>
+    </div>
+    <div class="container m-3">
+        <div class="field">
+            <label for="" class="label">Location ID</label>
+            <div class="select">
+                <select name="" id="locationId"></select>
+            </div>
+
+        <p id="locationIdError" class="help is-danger" style="display: none;">Please select a valid location</p>
+        </div>
+
+        <div class="field">
+            <label for="" class="label">Start date</label>
+            <div class="control">
+                <input type="date" class="input" id="startDate">
+            </div>
+
+            <p id="startDateError" class="help is-danger" style="display: none;">Please enter a valid start date</p>
+        </div>
+
+        <div class="field">
+            <label for="" class="label">End date</label>
+            <div class="control">
+                <input type="date" class="input" id="endDate">
+            </div>
+
+            <p id="endDateError" class="help is-danger" style="display: none;">Please enter a valid end date</p>
+        </div>
+    </div>
+
+    <div class="container m-3">
+        <button class="button is-success is-fullwidth" id="startButton">Save & start</button>
+    </div>
+
+    <div class="contaier m-3">
+        <button class="button is-danger is-fullwidth" id="stopButton">Stop</button>
+    </div>
+</body>
+<script src="popup.js"></script>
+</html>
